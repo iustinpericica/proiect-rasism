@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pagina principala</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href= "../css/indexcss.css"  type="text/css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+
+
+<body>
+
+
+<video autoplay muted loop id="myVideo">
+  <source src="../video/intro.mp4" type="video/mp4">
+</video>
+
+
+<div class="content">
+  <div class="row center-block text-center">
+  	<div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+  </div>
+    <br>
+    <button id="myBtn" onclick="myFunction()">Pause</button>
+    <div class="row text-center" style="font-size:20px;">Totul se rezuma la respect</div>
+    <div class="text-center row"> Consideri ca esti:</div>
+    <div class="row center-block text-center">
+    	<div class="col-md-6 col-sm-6 col-xl-6 col-xs-6"><button class="btn btn-default" id="nerasista">O persoana <b>nerasista</b></button></div>
+    	<div class="col-md-6 col-sm-6 col-xl-6 col-xs-6"><button class="btn btn-default" id="rasista">O persoana <b>rasista</b></button></div>
+    </div>
+    <br><br>
+    <div id="text-r" class="row text-center" style="font-size:20px;"></div>
+
+</div>
+
+</body>
+
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+
+function mergi_la(id){
+	window.location.replace(id);
+}
+
+$('#nerasista').click(function(){
+   $('#text-r').html(' ');
+   $('#text-r').append('Inseamna ca esti pe drumul cel bun, continua tot asa! Ne place de tine si am dori sa intri in comunitatea noastre, da-ne un mail la\
+rasism@yahoo.com.');
+
+});
+
+$('#rasista').click(function(){
+	
+   $('#text-r').html(' ');
+   $('#text-r').append('In acest caz, te invitam sa afli de cum poti scapa de aceasta boala pe urmatoarea <button class = "btn btn-default" onclick = "mergi_la("cum_sa_nu.html")">pagina</button>');
+
+});
+
+
+</script>
+
+</html>

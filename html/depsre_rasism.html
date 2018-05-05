@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Despre rasism</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href= "../css/desprecss.css"  type="text/css" >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+<!--
+<header>
+	<div class="row container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3">Pagina principala</div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3">Contact</div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3">Cum sa nu mai fiu rasist</div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3">Rasismul in lume</div>
+		</div>
+	</div>
+</header>
+-->
+<header>
+	<div class="overlay">
+
+<div class="row container-fluid">
+		<div class="row">
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3"><button class="btn btn-succes" onclick="mergi_la('index.html');">Pagina principala</button></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3"><button class="btn btn-succes" onclick="mergi_la('contact.html');">Contact </button> </div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3"><button class="btn btn-succes" onclick="mergi_la('cum_sa_nu.html');">Cum sa nu mai fiu rasist</button></div>
+			<div class="col-md-3 col-xs-3 col-sm-3 col-xl-3"><button class="btn btn-succes" onclick="mergi_la('rasismul_in_lume.html');">Rasismul in lume</button></div>
+		</div>
+	</div>
+
+<h1>Despre rasism</h1>
+
+<p style="font-size:25px;">Rasa este un concept social: o persoană se poate identifica cu o rasă, sau poate fi identificată de ceilalţi ca aparţinând unei rase, pe baza unor trăsături fizice. Ştiinţific însă, nu a fost demonstrată existenţa raselor.</p>
+<br>
+<button id="citeste">CITESTE MAI MULT</button>
+</div>
+</header>
+
+<p class="container-fluid text-center" id="scrist" style="font-size:20px;"></p>
+
+</body>
+
+<script type="text/javascript">
+	
+function mergi_la(id){
+	window.location.replace(id);
+}
+
+$('#citeste').click(function(){
+   $('#scrist').html(' ');
+   $('#scrist').append('În loc să începem prin a defini rasismul, să vedem ce este anti-rasismul. Premisa anti-rasismului este că în societăţile multiculturale şi democratice, toţi oamenii, indiferent de rasă, sunt egali şi au drepturi egale. Prin urmare, rasismul este bazat pe ideologia superiorităţii unei rase. Prejudecăţile rasiştilor, manifestate faţă de membrii unui grup, sunt cauzate de rasa anumitei persoane, pe care ei o consideră ca determinând inferioritatea/superioritatea, precum şi personalitatea unui om (e.g. romii sunt hoţi; negrii sunt inferiori).<br><br><br>Ideologia rasistă, a superiorităţii raselor, se manifestă frecvent în viaţa de zi cu zi. O persoană rasistă, de cele mai multe ori, nu se limitează doar la a crede că, de exemplu, africanii sunt inferiori. O persoană rasistă va ajunge, la un moment dat, să întâlnească un african, şi să îşi manifeste rasismul printr-un comportament discriminatoriu sau abuziv.<br><br><br>Ideologia rasistă, a superiorităţii raselor, se manifestă frecvent în viaţa de zi cu zi. O persoană rasistă, de cele mai multe ori, nu se limitează doar la a crede că, de exemplu, africanii sunt inferiori. O persoană rasistă va ajunge, la un moment dat, să întâlnească un african, şi să îşi manifeste rasismul printr-un comportament discriminatoriu sau abuziv.<br><br><br>În secţiunea precedentă, am discutat despre discriminare. Unul dintre criteriile care pot sta la baza unei fapte de discriminare este şi rasa, ceea ce conduce la discriminare rasială.')
+});
+
+</script>
+
+</html>
