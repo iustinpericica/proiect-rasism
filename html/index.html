@@ -22,10 +22,10 @@
 
 <div class="content">
   <div class="row center-block text-center">
-  	<div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+  	<div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('despre_rasism.html');" class="btn btn-default">Despre rasism</button></div>
     <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
-    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
-    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('contact.html');" class="btn btn-default">Contact</button></div>
+    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('cum_sa_nu.html');" class="btn btn-default">Cum sa nu fiu rasist</button></div>
+    <div class="col-md-3 col-xs-6 col-sm-3 col-lg-3"><button onclick="mergi_la('rasismul_in_lume.html');" class="btn btn-default">Rasismul in lume</button></div>
   </div>
     <br>
     <button id="myBtn" onclick="myFunction()">Pause</button>
@@ -65,15 +65,15 @@ function mergi_la(id){
 }
 
 $('#nerasista').click(function(){
-   $('#text-r').html(' ');
+   $('#text-r').html(''); // aici golesc sectiunea ca sa nu se dea append continuu si sa apara de mai multe ori
    $('#text-r').append('Inseamna ca esti pe drumul cel bun, continua tot asa! Ne place de tine si am dori sa intri in comunitatea noastre, da-ne un mail la\
-rasism@yahoo.com.');
+rasism@yahoo.com.'); // lipesc textul de sectiunea text-r
 
 });
 
 $('#rasista').click(function(){
 	
-   $('#text-r').html(' ');
+   $('#text-r').html(''); //la fel ca mai sus doar ca in cazul rasista
    $('#text-r').append('In acest caz, te invitam sa afli de cum poti scapa de aceasta boala pe urmatoarea <button class = "btn btn-default" onclick = "mergi_la("cum_sa_nu.html")">pagina</button>');
 
 });
